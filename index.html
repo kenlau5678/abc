@@ -15,6 +15,14 @@
   <py-script>
     with open("people.csv") as file:
       print(file.read())
+    with open("text.txt") as file:
+        print(file.read())
+    with open("text.txt","a") as file:
+        file.write("I am learning Python!\n")
+        file.write("I am really enjoying it!\n")
+        file.write("And I want to add more lines to say how much I like it")
+    with open("text.txt") as file:
+        print(file.read())
     print("OK")
   </py-script>
 </body>
